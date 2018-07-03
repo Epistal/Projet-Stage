@@ -7,8 +7,8 @@ import {
   View
 } from 'react-native';
 import { StackNavigator } from 'react-navigation';
-import Settings from './components/settings';
-import Home from './components/home';
+import Settings from './components/menu';
+import Home from './components/eclairage';
 
 const AppNavigator = StackNavigator({
   SettingScreen: { screen: Settings },

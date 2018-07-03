@@ -2,10 +2,15 @@ import React, { Component } from 'react';
 import { StyleSheet, Text, View, TouchableOpacity, Image } from 'react-native';
 
 export default class App extends React.Component {
+
+  static navigationOptions = {
+    title: 'Menu',
+  };
   render() {
     return (
-      <View style={styles.container}>
       
+      <View style={styles.container}>
+
         <View style={styles.row}>
           <TouchableOpacity style={styles.button} onPress={() => this.props.navigation.navigate('HomeScreen')} title="Home">
             <Image style={{width: 50, height: 50}} source={require("../assets/ampoule.png")}/>
@@ -48,7 +53,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     flexDirection: 'row',
-    backgroundColor: '#fff',
+    backgroundColor: '#E9E8EE',
     alignItems: 'baseLine',
     justifyContent: 'space-between',
     marginTop: 60,
