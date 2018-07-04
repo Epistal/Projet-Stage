@@ -54,7 +54,6 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'row',
     backgroundColor: '#E9E8EE',
-    alignItems: 'baseLine',
     justifyContent: 'space-between',
     marginTop: 60,
     margin: 40,
